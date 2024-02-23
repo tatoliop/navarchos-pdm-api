@@ -59,7 +59,7 @@
                 "alarm": {
                   "type": "boolean",
                   "description": "Whether an alarm is raised",
-                  "example": "2024-02-22 01:14:34True"
+                  "example": "True"
                 },
                 "scores": {
                   "type": "array",
