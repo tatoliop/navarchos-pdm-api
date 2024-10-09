@@ -5,6 +5,7 @@ RUN apt install -y make automake gcc g++ subversion python3-dev
 RUN pip install --upgrade pip
 #Add source files
 WORKDIR /opt/code/source
+RUN mkdir DataFolder
 COPY *.py ./
 COPY static/swagger.json ./static/swagger.json
 COPY requirements.txt .

@@ -1,0 +1,15 @@
+version: '3.3'
+
+volumes:
+  navarchos-sqlite:
+  
+services:
+  navarchos:
+    image: navarchos-pdm:0.0.1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - navarchos-sqlite:/opt/code/source/DataFolder/
